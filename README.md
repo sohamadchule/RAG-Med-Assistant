@@ -18,6 +18,8 @@ Retrieval Step – When a user asks a query, the system retrieves the most relev
 
 Response Generation – The gemini LLM uses the retrieved context to generate an accurate medical response.
 
+Automated New Data Ingestion – A background job checks extra_inputs.txt every few minutes, adds new Q&A pairs by creating embeddings and updating the med_data table, then clears the file automatically.
+
 ---
 
 ## 🖼️ Some Screenshots of Output :
@@ -44,3 +46,4 @@ Response Generation – The gemini LLM uses the retrieved context to generate an
 Data Set Link : https://www.kaggle.com/datasets/jpmiller/layoutlm
 
 The goal is to explore how RAG helps improve the accuracy of Large Language Models (LLMs) by retrieving relevant data from a structured database before generating an answer
+
