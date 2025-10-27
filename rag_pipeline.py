@@ -54,7 +54,7 @@ Answer:
 
 # --- Example Run ---
 if __name__ == "__main__":
-    q = "How to diagnose Gout"
+    q = "Cancer may spread from where it began to other parts of the body"
     ans = generate_answer(q)
     print("\nUser:", q)
     print("\nAssistant:", ans)
